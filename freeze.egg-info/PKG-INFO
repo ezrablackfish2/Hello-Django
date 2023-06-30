@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: freeze
+Version: 0.1
+Summary: A simple package that lists all of the Python packages that are currently installed in a virtual environment.
+Home-page: https://github.com/bard/freeze
+Author: Bard
+Author-email: bard@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+UNKNOWN
+
