@@ -1,2 +1,1 @@
-# Hello-Django
-the first django project ever
+in here you will find many django projects
