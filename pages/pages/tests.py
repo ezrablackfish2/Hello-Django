@@ -1,6 +1,7 @@
 from django.test import SimpleTestCase
 from django.urls import reverse
 
+
 # Create your tests here.
 class HomepageTests(SimpleTestCase):
     def test_url_exists_at_correct_location(self):
@@ -18,6 +19,7 @@ class HomepageTests(SimpleTestCase):
     def test_template_content(self):
         response = self.client.get(reverse("home"))
         self.assertContains(response, "<h1>Home of Ezra and Aman and kirubel</h1>")
+
 
 class AboutpageTests(SimpleTestCase):
     def test_url_exists_at_correct_location(self):
