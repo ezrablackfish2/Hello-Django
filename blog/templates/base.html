@@ -1,16 +1,16 @@
 {% load static %}
 <html>
 	<head>
-		<title> Ezra Django Blog</title>
+		<title>Django blog</title>
 		<link rel="stylesheet" href="{% static 'css/base.css' %}">
 	</head>
 	<body>
 		<header>
-		<h1><a href="{% url 'home' %}">Django of Ezra Blog</a></h1>
-		</header>
-		<div>
-			{% block content %}
-			{% endblock content %}
-		</div>
+		<h1><a href="{% url 'home' %}">Django blog</a></h1>
+	</header>
+	<div>
+	{% block content %}
+	{% endblock content %}
+	</div>
 	</body>
 </html>

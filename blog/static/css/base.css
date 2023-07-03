@@ -1,3 +1,46 @@
-header h1 a {
-	color: red;
+/* base.css */
+/* Add your styles here */
+
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
+
+/* Set a background color and font styles */
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style the main content area */
+main {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Add additional styles to create your desired complex and colorful design */
+

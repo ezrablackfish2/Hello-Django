@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for post in post_list %}
+	<div class="post-entry">
+		<h2><a href="">{{ post.title }}</a></h2>
+		<p>{{post.body }}</p>
+	</div>
+{% endfor %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ezra Blog Site</title>
+<style>
+body {
+  background-color: #29adff;
+  color: #ffffff;
+}
+
+header {
+  background-color: #0000ff;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+a {
+  color: #ffffff;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+}
+
+footer {
+  background-color: #0000ff;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.trending {
+  background-color: #b2dfdb;
+  color: #0000ff;
+}
+
+.featured {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.blue {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+
+.pink {
+  background-color: #ffc0cb;
+  color: #000000;
+}
+
+.yellow {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+.green {
+  background-color: #008000;
+  color: #ffffff;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a.about {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ffe4e1;
+}
+
+a.about:hover {
+  color: #0000ff;
+  text-decoration: underline;
+  background-color: #ffe4e1;
+}
+
+.center {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<h1 class="center">Ezra Site</h1>
+<nav>
+<a href="/" class="yellow">Home</a>
+<a href="/videos" class="pink">Videos</a>
+<a href="/channels" class="yellow">Channels</a>
+<a href="/search" class="pink">Search</a>
+<a href="/about" class="about">About</a>
+</nav>
+</header>
+<main>
+<section class="trending">
+<h2 class="center">Trending</h2>
+<ul>
+<li><a href="#">This is a trending video</a></li>
+<li><a href="#">This is another trending video</a></li>
+<li><a href="#">This is a third trending video</a></li>
+</ul>
+</section>
+<section class="featured">
+<h2 class="center">Featured</h2>
+<ul>
+<li><a href="#">This is a featured video</a></li>
+<li><a href="#">This is another featured video</a></li>
+<li><a href="#">This is a third featured video</a></li>
+</ul>
+</section>
+</main>
+<footer>
+<p>Copyright &copy; 2023 Ezra Site</p>
+</footer>
+</body>
+{% endblock content %}
+</html>
