@@ -25,7 +25,13 @@
         <div class="container">
             <h1>Welcome to Ezra Django Blog</h1>
             <div class="blog-post">
-                <h2>Blog Post Title</h2>
+                <h2>Tv Series</h2>
+{% for post in post_list %}
+	<div class="post-entry">
+		<h2><a href="">{{ post.title }}</a></h2>
+		<p>{{ post.body }}</p>
+	</div>
+{% endfor %}
                 <p class="post-meta">Published on January 1, 2023</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae purus vel lacus ullamcorper interdum. Integer et lorem fringilla, viverra sem sed, lobortis lacus. Sed nec ipsum nec sem gravida aliquet vel a mi. Nulla venenatis ullamcorper leo, et feugiat velit hendrerit sed. Sed vel urna eros.</p>
             </div>
@@ -41,11 +47,5 @@
         </div>
     </footer>
 </body>
-{% for post in post_list %}
-	<div class="post-entry">
-		<h2><a href="">{{ post.title }}</a></h2>
-		<p>{{ post.body }}</p>
-	</div>
-{% endfor %}
 </html>
 {% endblock content %}
