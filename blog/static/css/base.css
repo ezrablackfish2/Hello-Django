@@ -1,46 +1,174 @@
-/* base.css */
-/* Add your styles here */
-
-/* Reset default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set a background color and font styles */
+/* Overall page layout */
 body {
-    background-color: #f1f1f1;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Style the header */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  background-color: #232323;
+  color: #ffffff;
+  padding: 10px;
 }
 
-/* Style the navigation menu */
-nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px;
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Style the main content area */
+header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Main content */
 main {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
+  padding: 20px;
 }
 
-/* Style the footer */
+h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.blog-post {
+  margin-bottom: 40px;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  margin-bottom: 10px;
+}
+
+.post-meta {
+  font-style: italic;
+  color: #999999;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+  background-color: #232323;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
 
-/* Add additional styles to create your desired complex and colorful design */
+/* Complex Heading */
+h1.complex-heading {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: calc(2em + 4vw);
+  color: #ff0000;
+  text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s ease-in-out infinite;
+}
+
+/* Complex Subheading */
+h2.complex-subheading {
+  font-family: 'Impact', 'Charcoal', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #0000ff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #ffff00;
+  text-decoration-thickness: 0.2em;
+  text-decoration-style: wavy;
+  padding: 1em;
+  margin: 0;
+  line-height: 1.5;
+  background: radial-gradient(ellipse at center, #ff00ff, #00ffff);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(5deg);
+  animation: rotate-animation 10s linear infinite;
+}
+
+/* Complex Nested Subheading */
+h3.complex-nested-subheading {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  text-transform: lowercase;
+  text-decoration: line-through;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 0.5em;
+  margin: 0;
+  line-height: 1.8;
+  background: repeating-linear-gradient(45deg, #ff00ff, #00ffff 10px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s ease-in-out infinite;
+}
+
+/* Complex Multiple-Level Subheading */
+h4.complex-multi-level-subheading {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #008000;
+  text-transform: capitalize;
+  text-decoration: overline;
+  text-decoration-color: #800080;
+  padding: 0.2em;
+  margin: 0;
+  line-height: 1.2;
+  background: repeating-linear-gradient(45deg, #000000, #000000 10px, #ffffff 10px, #ffffff 20px);
+  background-size: 20px 20px;
+}
+
+/* Complex Styling of Subheading Content */
+h2.complex-subheading span {
+  font-size: 0.8em;
+  color: #ff0000;
+  text-transform: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+/* Animation Keyframes */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
