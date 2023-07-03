@@ -1,7 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for post in post_list %}
+	<div class="post-entry">
+		<h2><a href="">{{ post.title }}</a></h2>
+		<p>{{post.body }}</p>
+	</div>
+{% endfor %}
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ezra Site</title>
+<title>Ezra Blog Site</title>
 <style>
 body {
   background-color: #29adff;
@@ -144,4 +153,5 @@ a.about:hover {
 <p>Copyright &copy; 2023 Ezra Site</p>
 </footer>
 </body>
+{% endblock content %}
 </html>
