@@ -3,17 +3,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #e6e6e6;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
 header {
-  background-color: #232323;
+  background-color: #333333;
   color: #ffffff;
   padding: 10px;
 }
@@ -47,15 +50,19 @@ h1 {
 
 .blog-post {
   margin-bottom: 40px;
+  background-color: #f7f7f7;
+  padding: 20px;
 }
 
 .blog-post h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #333333;
 }
 
 .blog-post p {
   margin-bottom: 10px;
+  color: #666666;
 }
 
 .post-meta {
@@ -65,7 +72,7 @@ h1 {
 
 /* Footer */
 footer {
-  background-color: #232323;
+  background-color: #333333;
   color: #ffffff;
   padding: 10px;
   text-align: center;
