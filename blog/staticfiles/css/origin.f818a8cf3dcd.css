@@ -1,0 +1,78 @@
+/* Overall page layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+}
+
+h1 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1 a:hover {
+  color: #ff0000;
+}
+
+div {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Block content */
+.content {
+  color: #333333;
+}
+
+/* Advanced and Colorful Styling */
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+  padding: 20px 0;
+  text-align: center;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s ease-in-out infinite;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff00ff;
+  text-decoration: underline;
+}
+
+div {
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #00ff00, #ffff00);
+  animation: gradient-animation 5s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
