@@ -1,9 +1,13 @@
 /* Overall page layout */
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  background-color: #F5D7BD;
+  color: #0000FF;
+}
+p {
+	color: #008000;
 }
 
 header {
@@ -32,7 +36,7 @@ div {
 
 /* Block content */
 .content {
-  color: #333333;
+  color: #0000FF;
 }
 
 /* Advanced and Colorful Styling */
@@ -41,7 +45,7 @@ h1 {
   margin-top: 0;
   padding: 20px 0;
   text-align: center;
-  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  background: linear-gradient(45deg, #ff0000, #0000FF, #0000ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-animation 5s ease-in-out infinite;
@@ -58,9 +62,9 @@ a:hover {
 }
 
 div {
-  border: 2px solid #00ffff;
-  border-radius: 10px;
-  background: linear-gradient(45deg, #00ff00, #ffff00);
+  border: 5px solid #DF0030;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #DF0030, #ADD8E6);
   animation: gradient-animation 5s ease-in-out infinite;
 }
 

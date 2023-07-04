@@ -25,12 +25,12 @@
         <h1>Welcome to Our blog homepage</h1>
             <div class="blog-post">
                 <h2>Tv Series</h2>
-		{% for post in post_list %}
+		<p>{% for post in post_list %}
 			<div class="post-entry">
 			<h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
 			<p>{{ post.body }}</p>
 			</div>
-		{% endfor %}
+			{% endfor %}</p>
                 <p class="post-meta">Published on January 1, 2023</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae purus vel lacus ullamcorper interdum. Integer et lorem fringilla, viverra sem sed, lobortis lacus. Sed nec ipsum nec sem gravida aliquet vel a mi. Nulla venenatis ullamcorper leo, et feugiat velit hendrerit sed. Sed vel urna eros.</p>
             </div>
