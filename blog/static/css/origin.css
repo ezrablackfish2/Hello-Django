@@ -64,7 +64,7 @@ a:hover {
 div {
   border: 5px solid #DF0030;
   border-radius: 20px;
-  background: linear-gradient(45deg, #DF0030, #ADD8E6);
+  background: linear-gradient(45deg, #FFFF00; , #E9967A);
   animation: gradient-animation 5s ease-in-out infinite;
 }
 
