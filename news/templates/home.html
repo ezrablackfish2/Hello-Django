@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+<html>
+	{% block title %}HomePage for Ezra news Paper Agency{% endblock title %}
+
+	{% block content %}
+	{% if user.is_authenticated %}
+	Well, hello {{ user.username }}! You are {{ user.age }} yeards old.
+		<p><a href="{% url 'logout' %}">Log Out</a></p>
+	{% else %}
+		<p> You are not logged in</p>
+		<a href="{% url 'login' %}"> LogIn</a>
+		<a href="{% url 'signup' %}">Signup</a>
+	{% endif %}
+	{% endblock content %}
+</html>
