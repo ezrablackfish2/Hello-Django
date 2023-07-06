@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     "crispy_forms",  
     "crispy_bootstrap5", 
     # Local
-    "accounts",
-    "pages",
+    "accounts.apps.AccountsConfig",
+    "pages.apps.PagesConfig",
+    "articles.apps.ArticlesConfig",
 ]
 
 MIDDLEWARE = [
@@ -136,10 +137,12 @@ LOGOUT_REDIRECT_URL = "home"
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" 
 CRISPY_TEMPLATE_PACK = "bootstrap5"  
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"  # new
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 DEFAULT_FROM_EMAIL = "ezrayeneneh2000@gmail.com"
 EMAIL_HOST = "smtp.sendgrid.net"
 EMAIL_HOST_USER = "apikey"
-EMAIL_HOST_PASSWORD = "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"
+EMAIL_HOST_PASSWORD = "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"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+TIME_ZONE = "America/New_York"
