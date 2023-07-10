@@ -3,9 +3,9 @@ version: "3.9"
 services:
   web:
     build: .
-    command: python3 /Home/ezra/Documents/code/Hello-Django/manage.py runserver 0.0.0.0:8000
+    command: python /code/manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/Home/ezra/Documents/code/HelloDjango
+      - .:/code
     ports:
       - 8000:8000
     depends_on:
@@ -19,3 +19,4 @@ services:
 
 volumes:
   postgres_data:
+
