@@ -1,15 +1,9 @@
 {% extends "_base.html" %}
+{% load static %}
 
 {% block title %} Home of ezra books {% endblock title %}
 
 {% block content %}
 	<h1> This is ezra's homepage </h1>
-	{% if user.is_authenticated %}
-		<p>whats'up {{ user.email }}!</p>
-		<p><a href="{% url 'logout' %}">Sign out and get out of town </a></p>
-	{% else %}
-		<p>You did not sign in brother</p>
-		<a href="{% url 'login' %}">Sign in</a>
-		<a href="{% url 'signup' %}">Sign Up</a>
-	{% endif %}
+	<img class="bookcover" src="{% static 'images/rdr2.webp' %}">
 {% endblock content %}
