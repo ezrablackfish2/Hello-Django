@@ -1,0 +1,5 @@
+{% extends "account/email/base_message.txt" %}
+{% load account %}
+{% load i18n %}
+{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %} you have recieved an email from the ezra django site because as we know our child {{ user_display }} you have been given your email address to register an account on {{ site_domain }}.
+to confirm this is correct, go to {{ activate_url }}{% endblocktrans %}{% endautoescape %}{% endblock %}
