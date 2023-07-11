@@ -24,14 +24,14 @@ gle navigation">
 	{% if user.is_authenticated %}
 	<p class="nav-link">whats'up {{ user.username }}</p>
 		<li class="nav-item">
-		<a class="nav-link" href="{% url 'logout' %}">Sign out of this account please</a>
+		<a class="nav-link" href="{% url 'account_logout' %}">Sign out of this account please</a>
 		</li>
 	{% else %}
 	<li class="nav-item">
-	<a class="nav-link" href="{% url 'login' %}">I want to sign in to my book store account</a>
+	<a class="nav-link" href="{% url 'account_login' %}">I want to sign in to my book store account</a>
 	</li>
 <li class="nav-item">
-	<a class="nav-link" href="{% url 'signup' %}">I want a to create a new book store account</a>
+	<a class="nav-link" href="{% url 'account_signup' %}">I want a to create a new book store account</a>
 	</li>
 	{% endif %}
 	</ul>
