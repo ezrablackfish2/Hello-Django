@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+
+{% block title %}Finder{% endblock title %}
+
+{% block content %}
+	<h1>I found this files </h1>
+	{% for book in book_list %}
+	<div>
+		<h3><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h3>
+		<p>Author: {{ book.author }}</p>
+		<p>Price: $ {{ book.price }}</p>
+	</div>
+	{% endfor %}
+{% endblock content %}
