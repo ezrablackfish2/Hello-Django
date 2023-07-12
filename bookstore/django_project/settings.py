@@ -157,11 +157,11 @@ AUTHENTICATION_BACKENDS = (
         "django.contrib.auth.backends.ModelBackend",
         "allauth.account.auth_backends.AuthenticationBackend",
         )
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = "ezrayeneneh2000@gmail.com"
 EMAIL_HOST = "smtp.sendgrid.net"
 EMAIL_HOST_USER = "apikey"
-EMAIL_HOST_PASSWORD = env("ezra_secret")
+EMAIL_HOST_PASSWORD = "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"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 ACCOUNT_SESSION_REMEMBER = True
