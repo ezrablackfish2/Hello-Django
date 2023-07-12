@@ -156,6 +156,12 @@ AUTHENTICATION_BACKENDS = (
         "allauth.account.auth_backends.AuthenticationBackend",
         )
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+DEFAULT_FROM_EMAIL = "ezrayeneneh2000@gmail.com"
+EMAIL_HOST = "smtp.sendgrid.net"
+EMAIL_HOST_USER = "apikey"
+EMAIL_HOST_PASSWORD = env("ezra_secret")
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 
@@ -163,7 +169,7 @@ ACCOUNT_USERNAME_REQUIRED = False # new
 ACCOUNT_AUTHENTICATION_METHOD = "email" # new
 ACCOUNT_EMAIL_REQUIRED = True # new
 ACCOUNT_UNIQUE_EMAIL = True
+DJANGO_SECRET_KEY = "django-insecure-hv1(e0r@v4n4m6gqdz%dn(60o=dsy8&@0_lbs8p-v3u^bs4)xl"
 
-SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 DEFAULT_FROM_EMAIL = "ezrayeneneh1992@gmail.com"

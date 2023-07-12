@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
     environment:
-      - "DJANGO_SECRET_KEY=django-insecure-hv1(e0r@v4n4m6gqdz%dn(60o=dsy8&@0_lbs8p-v3u^bs4)xl"
+      - "ezra_secret=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"
   db:
     image: postgres:13
     volumes:
