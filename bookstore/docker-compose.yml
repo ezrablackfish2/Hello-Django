@@ -12,6 +12,7 @@ services:
       - db
     environment:
       - "ezra_secret=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"
+      - "DJANGO_DEBUG=False"
   db:
     image: postgres:13
     volumes:
